@@ -1,0 +1,33 @@
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.admin.mapper: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useunicode=true&characterencoding=utf-8&usessl=false&serverTimezone=CTT
+    username: root
+    password: 123456
+  application:
+    name: admin
+
+
+
+
+  main:
+    allow-bean-definition-overriding: true
+mybatis:
+  type-aliases-package: package com.admin.dto
+  mapper-locations: classpath*:mapper/*.xml
+  #配置驼峰下划线
+  configuration:
+    map-underscore-to-camel-case: true
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:8767/eureka/
+
+

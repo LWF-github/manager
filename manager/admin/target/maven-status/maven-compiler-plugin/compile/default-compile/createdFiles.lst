@@ -1,0 +1,8 @@
+com\admin\mapper\UserMapper.class
+com\admin\dto\ParamsDTO.class
+com\admin\controller\UserController.class
+com\admin\dto\User.class
+com\admin\service\impl\UserServiceImpl.class
+com\admin\SpringAdminApplication.class
+com\admin\dto\CustomerDTO.class
+com\admin\service\UserService.class
